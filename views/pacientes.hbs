@@ -1,0 +1,41 @@
+</head>
+<body>
+    <h1>Clinica del occidente</h1>
+    <h3>Listado de pacientes</h3>
+    <table border="solid">
+        <thead>
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Numero de cedula</th>
+            <th>Fecha de nacimiento</th>
+            <th>Telefono</th>
+
+        </tr>
+    </thead>
+    <tbody id="cuerpo-tabla-pacientes">
+        
+                  <!-- Se agrega el contenido dinamicamente por medio de Handlebars -->
+         {{#each resultado}}
+        <tr>
+            <td>{{nombres}}</td>
+            <td>{{apellidos}}</td>
+            <td>{{cedula}}</td>
+            <td>{{formatoFecha fecha_nacimiento}}</td>
+            <td>{{telefono}}</td>
+         
+        </tr>
+        {{/each}}
+    </tbody>
+    </table><br><br>
+    
+   
+    <div class="boton-volver">
+        <input type="submit" value="Enviar"><br><br>
+    <a href="index.html">
+        <input type="button" value="volver" ></a>
+    </div>
+        <footer>
+            <h2>Realizado por:</h2><br>
+            <p><b>Oscar Martinez</b></p>
+        </footer>

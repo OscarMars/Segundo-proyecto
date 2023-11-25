@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de pacientes</title>
+    
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <h1>Clinica del occidente</h1>
+    <h3>Registro de pacientes </h3>
+    <form id="registro-pacientes-form" class="registro-pacientes" method="post" action="/agregar-paciente" required>
+        <label for="nombre">Nombres </label><br>
+        <input type="text" id="nombres" name="nombres" placeholder="igresa tus nombres" required><br>
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos" placeholder="ingresa tus apellidos" required><br>
+        <label for="cedula">Nunero de cedula</label><br>
+        <input type="number" id="cedula" name="cedula" placeholder="ingresa # cedula" required><br>
+        <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+        <input  type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="ingresa tu fecha de nacimiento" required><br>
+        <label for="telefono">Telefono</label><br>
+        <input type="texto" id="telefono" name="telefono" placeholder="ingresa # de telefono" required><br>
+        
+
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="boton-volver">
+    <a href="index.html">
+        <input type="button" value="volver" ></a>
+    </div>
+        <footer>
+            <h2>Realizado por:</h2><br>
+            <p><b>Oscar Martinez</b></p>
+        </footer>
+
+     
+        <script src="app.js"></script>
+</body>
+</html>

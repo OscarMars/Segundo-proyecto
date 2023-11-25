@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de pacientes</title>
+    
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <h1>Clinica del occidente</h1>
+    <h3>Registro de pacientes </h3>
+    
+    <form id="registro-pacientes-form" class="registro-medico" method="post" action="/agregar-medico" required>
+        <label for="nombres">Nombres </label><br>
+        <input type="text" id="nombres" name="nombres" placeholder="igresa tus nombres"><br>
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos" placeholder="ingresa tus apellidos" required><br>
+        <label for="cedula">Nunero de cedula</label><br>
+        <input type="number" id="cedula" name="cedula" placeholder="ingresa # cedula" required><br>
+        <label for="consultorio">Numero consultorio</label><br>
+        <input type="number"  id="consultorio" name="consultorio" placeholder="ingresa # consultorio" required><br>
+        <label for="telefono">Telefono</label><br>
+        <input type="number" id="telefono" name="telefono" placeholder="ingresa # de telefono" required><br>
+        <label for="correo" >Ingresa tu correo</label><br>
+        <input type="mail" id="correo" name="correo" placeholder="ingresa tu correo"><br>
+        <label for="especialidad">Especialidad requerida </label><br>
+        <select name="especialidad" id="especialidad">
+            <option >selecciona una especialidad</optio>
+            <option> Medicina general</option>
+            <option >Cardiologia </option>
+            <option >Medicina interna </option>
+            <option>Dermatologia</option>
+            <option>Rehabilitacion fisica</option>
+            <option>Psicologia</option>
+            <option>Odontologia</option>
+            <option>Radiologia</option>
+        </select><br>
+        <input type="submit" >
+    </form>
+    <div class="boton-volver">
+    <a href="../index.html">
+        <input type="button" value="volver" ></a>
+    </div>
+        <footer>
+            <h2>Realizado por:</h2><br>
+            <p><b>Oscar Martinez</b></p>
+        </footer>
+
+        <script src="app.js"></script>
+</body>
+</html>
